@@ -320,5 +320,7 @@ void do_Blink(void);
 // Decoded value for NEC when a repeat code is received
 #define REPEAT 0xffffffff
 
+// ##HEP##
+#include "IRLibPCI2.h"
 
 #endif //IRLib_h
