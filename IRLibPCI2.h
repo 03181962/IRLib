@@ -1,8 +1,5 @@
 // IRLibPCI2.h
 
-#ifndef IRLibPCI2_h
-#define IRLibPCI2_h
-
 class IRrecvPCI2: public IRrecvBase
 {
 public:
@@ -13,5 +10,3 @@ public:
 private:
   unsigned char intrnum;
 };
-
-#endif //IRLibPCI2_h
