@@ -1,0 +1,13 @@
+MAX_LAST_MARK_OR_SPACE - the length of time we wait for a pin change before deciding that the transmission is complete
+TIMER - a hardware timer
+
+
+when you detect a pin state change
+  have TIMER trigger interrupt after MAX_LAST_MARK_OR_SPACE (will need to be started or reset)
+  do existing processing (record mark or space)
+
+when the TIMER interrupt occurs
+  stop receiving
+  stop TIMER
+  flag that you have results
+
